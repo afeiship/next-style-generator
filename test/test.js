@@ -14,7 +14,7 @@ describe('next/styleGenerator', function () {
       };
     });
 
-    // console.log(result);
+    console.log(result);
 
     assert.equal(result.blank1, 1);
     assert.equal(result.blank4, 4);
@@ -39,7 +39,7 @@ describe('next/styleGenerator', function () {
       };
     });
 
-    // console.log(result);
+    console.log(result);
 
     assert.equal(result.c_e.color, '#eee');
   });
