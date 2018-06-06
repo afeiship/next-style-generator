@@ -23,14 +23,14 @@ describe('next/styleGenerator', function () {
 
 
   it('nx.styleGenerator generate for map', function () {
-    var map = {
+    var colors = {
       e: '#eee',
       0: '#000',
       f: '#fff',
       primary: '#F60'
     };
 
-    var result = nx.styleGenerator(map, (key, value) => {
+    var result = nx.styleGenerator(colors, (key, value) => {
       return {
         key: `c_${key}`,
         value: {

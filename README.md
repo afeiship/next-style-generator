@@ -10,7 +10,6 @@ npm install -S afeiship/next-style-generator --registry=https://registry.npm.tao
 ```js
 // Generate  list:
 var list = [1, 2, 3, 4, 5, 6, 10];
-
 var result = nx.styleGenerator(list, (key, value) => {
   return {
     key: `blank${value}`,
@@ -31,15 +30,14 @@ var result = nx.styleGenerator(list, (key, value) => {
 
 
 // Genearte map:
-
-var map = {
+var colors = {
   e: '#eee',
   0: '#000',
   f: '#fff',
   primary: '#F60'
 };
 
-var result = nx.styleGenerator(map, (key, value) => {
+var result = nx.styleGenerator(colors, (key, value) => {
   return {
     key: `c_${key}`,
     value: {
